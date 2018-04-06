@@ -1,12 +1,15 @@
 (function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  var moment =
+    typeof require !== "undefined" && require !== null && !require.amd
+      ? require("moment")
+      : this.moment;
 
   moment.holidays.poland = {
     "Nowy Rok": {
-      date: '1/1'
+      date: "1/1"
     },
     "Święto Trzech Króli": {
-      date: '1/6'
+      date: "1/6"
     },
     "Niedziela Wielkanocna": {
       date: "easter"
@@ -29,18 +32,24 @@
     "Wniebowzięcie Najświętszej Maryi Panny": {
       date: "8/15"
     },
-    "Wszystkich świętych": {
-      date: '11/1'
+    "Wszystkich Świętych": {
+      date: "11/1"
     },
     "Narodowe Święto Niepodległości": {
-      date: '11/11'
+      date: "11/11"
     },
     "Pierwszy dzień Bożego Narodzenia": {
-      date: '12/25'
+      date: "12/25"
     },
     "Drugi dzień Bożego Narodzenia": {
-      date: '12/26'
+      date: "12/26"
     }
   };
-  if ((typeof module !== 'undefined' && module !== null ? module.exports : void 0) != null) { module.exports = moment; }
-}).call(this);
+  if (
+    (typeof module !== "undefined" && module !== null
+      ? module.exports
+      : void 0) != null
+  ) {
+    module.exports = moment;
+  }
+}.call(this));
